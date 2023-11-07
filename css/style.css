@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #1d172a;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body * {
+    font-family: 'Titillium Web', sans-serif;
+    color: #1E293B;
+}
+
+main {
+    display: flex;
+}
+
+a {
+    font-weight: 600;
+    color: #7c3aed;
+    text-decoration: none;
+
+    padding: 0 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 1px solid #7c3aed;
+    border-radius: 2px;
+}
+
+/* Container left */
+#container-login {
+    background: #f8fafc;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 40px 112px;
+}
+
+#content {
+    width: 350px;
+    margin-top: 114px;
+}
+
+#content-text {
+    margin-bottom: 40px;
+}
+
+#content-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#content-text p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#content-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#content-input label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+#content-input label p {
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+#content-input input {
+    color: #1E293B;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 16px 12px;
+}
+
+#content-input input:focus, #content-input input:hover {
+    outline: 1px solid #7c3aed;
+}
+
+#content-input input::placeholder {
+    color: #94A3B8;
+}
+
+#container-login button {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background: #7c3aed;
+
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    margin: 16px 0 32px;
+    padding: 16px 24px;
+
+    transition: background 0.2s;
+}
+
+#container-login button:hover {
+    background: #9f67ff;
+}
+
+#container-login button:focus {
+    outline: 1px solid #3d1d75;
+}
+
+/* Container right */
+#container-image {
+    width: 45vw;
+    max-width: 730px;
+    /*min-width: 474px;*/
+    border-radius: 0 10px 10px 0;
+    background: #7c3aed url(../assets/background-login.svg) no-repeat center;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* Media querys */
+/*@media (min-width: 1050px) {
+
+}*/
