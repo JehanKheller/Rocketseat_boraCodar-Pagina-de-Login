@@ -125,6 +125,10 @@ a:focus {
     background: #9f67ff;
 }
 
+#container-login button:active {
+    background:#ab7aff;
+}
+
 #container-login button:focus {
     outline: 1px solid #3d1d75;
 }
